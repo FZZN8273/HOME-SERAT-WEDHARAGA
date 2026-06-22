@@ -24,9 +24,7 @@
             overflow-x: hidden;
         }
 
-        /* ============================================================ */
-        /* MODE SELECTOR */
-        /* ============================================================ */
+        /* ===== MODE SELECTOR ===== */
         #modeSelector {
             position: fixed;
             inset: 0;
@@ -83,7 +81,6 @@
             cursor: pointer;
             transition: 0.4s ease;
             min-width: 140px;
-            text-decoration: none;
             color: #2d2a26;
         }
 
@@ -109,9 +106,7 @@
             color: #7b5e4b;
         }
 
-        /* ============================================================ */
-        /* BACKGROUND — serat4.png */
-        /* ============================================================ */
+        /* ===== BACKGROUND — serat4.png ===== */
         .bg-serat {
             position: fixed;
             inset: 0;
@@ -133,9 +128,7 @@
             pointer-events: none;
         }
 
-        /* ============================================================ */
-        /* LOADING SCREEN */
-        /* ============================================================ */
+        /* ===== LOADING SCREEN ===== */
         #loadingScreen {
             position: fixed;
             inset: 0;
@@ -381,9 +374,7 @@
             }
         }
 
-        /* ============================================================ */
-        /* KONTEN UTAMA */
-        /* ============================================================ */
+        /* ===== KONTEN UTAMA ===== */
         #mainContent {
             opacity: 0;
             transition: opacity 1s ease 0.3s;
@@ -397,9 +388,7 @@
             opacity: 1;
         }
 
-        /* ============================================================ */
-        /* NAVIGASI */
-        /* ============================================================ */
+        /* ===== NAV ===== */
         .nav {
             display: flex;
             align-items: center;
@@ -480,9 +469,7 @@
             color: #b8956e;
         }
 
-        /* ============================================================ */
-        /* SECTION */
-        /* ============================================================ */
+        /* ===== SECTION ===== */
         .section {
             display: none;
             animation: fadeUp 0.5s ease;
@@ -503,9 +490,7 @@
             }
         }
 
-        /* ============================================================ */
-        /* KARTU & ELEMEN */
-        /* ============================================================ */
+        /* ===== KARTU ===== */
         .card {
             background: rgba(255, 252, 245, 0.75);
             backdrop-filter: blur(8px);
@@ -641,9 +626,7 @@
             font-weight: 400;
         }
 
-        /* ============================================================ */
-        /* HOME */
-        /* ============================================================ */
+        /* ===== HOME ===== */
         .hero {
             display: flex;
             flex-wrap: wrap;
@@ -755,9 +738,7 @@
             margin-right: 6px;
         }
 
-        /* ============================================================ */
-        /* SERAT GALLERY — navigasi titik 3 */
-        /* ============================================================ */
+        /* ===== SERAT GALLERY — titik 3, tanpa caption panjang ===== */
         .serat-gallery-wrap {
             margin: 20px 0 24px;
             position: relative;
@@ -853,35 +834,21 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
         }
 
-        .serat-slide .slide-caption {
-            margin-top: 12px;
-            font-size: clamp(0.7rem, 1vw, 0.8rem);
-            color: #7b5e4b;
-            text-align: center;
-            max-width: 400px;
-            background: rgba(255, 252, 245, 0.4);
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-style: italic;
-            line-height: 1.5;
-        }
-        .serat-slide .slide-caption i {
-            color: #c9a05c;
-            margin-right: 6px;
-        }
-
+        /* LABEL KECIL — tanpa caption panjang */
         .serat-slide .slide-label {
-            font-size: clamp(0.6rem, 0.9vw, 0.7rem);
+            margin-top: 10px;
+            font-size: clamp(0.6rem, 0.9vw, 0.75rem);
             color: #b8956e;
             font-weight: 600;
-            margin-top: 4px;
             letter-spacing: 0.5px;
             text-transform: uppercase;
+            background: rgba(255, 252, 245, 0.3);
+            padding: 4px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(200, 180, 165, 0.06);
         }
 
-        /* ============================================================ */
-        /* NILAI UTAMA & STRUKTUR */
-        /* ============================================================ */
+        /* ===== NILAI UTAMA ===== */
         .nilai-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -920,6 +887,7 @@
             line-height: 1.5;
         }
 
+        /* ===== STRUKTUR ===== */
         .struktur-wrap {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -978,9 +946,7 @@
             font-style: normal;
         }
 
-        /* ============================================================ */
-        /* Q&A */
-        /* ============================================================ */
+        /* ===== Q&A ===== */
         .qa-item {
             border-bottom: 1px solid rgba(180, 160, 140, 0.08);
             padding: 14px 0;
@@ -1028,9 +994,7 @@
             color: #3d5a3d;
         }
 
-        /* ============================================================ */
-        /* FAKTA & PEMBELAJARAN */
-        /* ============================================================ */
+        /* ===== EXTRA ===== */
         .extra-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1119,6 +1083,7 @@
             color: #3d5a3d;
         }
 
+        /* ===== CTA GAME ===== */
         .game-cta {
             background: rgba(255, 252, 245, 0.5);
             backdrop-filter: blur(4px);
@@ -1184,9 +1149,7 @@
             color: #c9a05c;
         }
 
-        /* ============================================================ */
-        /* RESPONSIF */
-        /* ============================================================ */
+        /* ===== RESPONSIF ===== */
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -1405,9 +1368,7 @@
 </head>
 <body>
 
-    <!-- ============================================================ -->
-    <!-- MODE SELECTOR -->
-    <!-- ============================================================ -->
+    <!-- ===== MODE SELECTOR ===== -->
     <div id="modeSelector">
         <div class="mode-title">🌏 Pilih Mode Perangkat</div>
         <div class="mode-sub">Pilih perangkat yang kamu gunakan untuk pengalaman terbaik.</div>
@@ -1430,15 +1391,11 @@
         </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- BACKGROUND — serat4.png -->
-    <!-- ============================================================ -->
+    <!-- ===== BACKGROUND ===== -->
     <div class="bg-serat"></div>
     <div class="bg-overlay"></div>
 
-    <!-- ============================================================ -->
-    <!-- LOADING SCREEN -->
-    <!-- ============================================================ -->
+    <!-- ===== LOADING ===== -->
     <div id="loadingScreen">
         <div class="mountain-scene">
             <div class="sun"></div>
@@ -1463,9 +1420,7 @@
         </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- KONTEN UTAMA -->
-    <!-- ============================================================ -->
+    <!-- ===== KONTEN UTAMA ===== -->
     <div id="mainContent">
 
         <div class="container" style="max-width:1080px;margin:0 auto;position:relative;z-index:10;">
@@ -1487,9 +1442,7 @@
                 </div>
             </nav>
 
-            <!-- ========================================================= -->
-            <!-- HOME -->
-            <!-- ========================================================= -->
+            <!-- ===== HOME ===== -->
             <section class="section active" id="sec-home">
                 <div class="hero">
                     <div class="hero-text">
@@ -1506,9 +1459,9 @@
                     </div>
 
                     <div class="hero-poster">
-                        <img src="hp.png" alt="’" />
+                        <img src="hp.png" alt="Jangan biarkan HP menguasai duniamu" />
                         <div class="poster-caption">
-                            <i class="fas fa-mobile-alt"></i> ’
+                            <i class="fas fa-mobile-alt"></i> Jangan biarkan HP menguasai duniamu
                         </div>
                     </div>
                 </div>
@@ -1534,9 +1487,7 @@
                 </div>
             </section>
 
-            <!-- ========================================================= -->
-            <!-- ALASAN DIBUAT — dengan galeri serat (navigasi titik 3) -->
-            <!-- ========================================================= -->
+            <!-- ===== ALASAN DIBUAT ===== -->
             <section class="section" id="sec-about">
                 <h2 class="section-title"><i class="fas fa-info-circle"></i> Alasan Dibuat</h2>
                 <p class="section-sub"><i class="fas fa-arrow-right" style="color:#b8956e;"></i> Mengapa platform ini hadir dan apa tujuannya.</p>
@@ -1556,7 +1507,7 @@
                     </div>
                 </div>
 
-                <!-- GALERI SERAT — navigasi titik 3 -->
+                <!-- GALERI SERAT — titik 3, tanpa caption panjang -->
                 <div class="serat-gallery-wrap">
                     <div class="gallery-header">
                         <h3><i class="fas fa-image" style="color:#c9a05c;"></i> Visualisasi Naskah Serat Wedharaga</h3>
@@ -1569,33 +1520,21 @@
 
                     <div class="serat-slider">
                         <div class="serat-slides" id="seratSlides">
-                            <!-- Slide 1: serat1.png -->
                             <div class="serat-slide">
                                 <div class="slide-img">
                                     <img src="serat1.png" alt="Naskah Serat Wedharaga halaman 1" />
                                 </div>
-                                <div class="slide-caption">
-                                    <i class="fas fa-info-circle"></i> Ini hanyalah ilustrasi dari naskah Serat Wedharaga. Untuk melihat langsung, silakan kunjungi peneliti, museum, atau lembaga yang memiliki koleksi asli Serat Wedharaga. Ilustrasi ini bisa saja tidak 100% akurat.
-                                </div>
                                 <div class="slide-label">📜 serat1.png · Halaman 1</div>
                             </div>
-                            <!-- Slide 2: serat2.png -->
                             <div class="serat-slide">
                                 <div class="slide-img">
                                     <img src="serat2.png" alt="Naskah Serat Wedharaga halaman 2" />
                                 </div>
-                                <div class="slide-caption">
-                                    <i class="fas fa-info-circle"></i> Ini hanyalah ilustrasi dari naskah Serat Wedharaga. Untuk melihat langsung, silakan kunjungi peneliti, museum, atau lembaga yang memiliki koleksi asli Serat Wedharaga. Ilustrasi ini bisa saja tidak 100% akurat.
-                                </div>
                                 <div class="slide-label">📜 serat2.png · Halaman 2</div>
                             </div>
-                            <!-- Slide 3: serat3.png -->
                             <div class="serat-slide">
                                 <div class="slide-img">
                                     <img src="serat3.png" alt="Naskah Serat Wedharaga halaman 3" />
-                                </div>
-                                <div class="slide-caption">
-                                    <i class="fas fa-info-circle"></i> Ini hanyalah ilustrasi dari naskah Serat Wedharaga. Untuk melihat langsung, silakan kunjungi peneliti, museum, atau lembaga yang memiliki koleksi asli Serat Wedharaga. Ilustrasi ini bisa saja tidak 100% akurat.
                                 </div>
                                 <div class="slide-label">📜 serat3.png · Halaman 3</div>
                             </div>
@@ -1674,9 +1613,7 @@
                 </div>
             </section>
 
-            <!-- ========================================================= -->
-            <!-- Q&A -->
-            <!-- ========================================================= -->
+            <!-- ===== Q&A ===== -->
             <section class="section" id="sec-qa">
                 <h2 class="section-title"><i class="fas fa-question-circle"></i> Q&A</h2>
                 <p class="section-sub"><i class="fas fa-arrow-right" style="color:#b8956e;"></i> Tanya jawab singkat seputar Serat Wedharaga.</p>
@@ -1705,9 +1642,7 @@
                 </div>
             </section>
 
-            <!-- ========================================================= -->
-            <!-- FAKTA & PEMBELAJARAN -->
-            <!-- ========================================================= -->
+            <!-- ===== FAKTA & PEMBELAJARAN ===== -->
             <section class="section" id="sec-extra">
                 <h2 class="section-title"><i class="fas fa-gem"></i> Fakta & Pembelajaran</h2>
                 <p class="section-sub"><i class="fas fa-arrow-right" style="color:#b8956e;"></i> Hal menarik yang bisa kamu ambil dari Serat Wedharaga.</p>
@@ -1742,7 +1677,6 @@
                     </div>
                 </div>
 
-                <!-- Detail Serat Wedharaga -->
                 <div style="margin:24px 0 8px;">
                     <h3 style="color:#3d5a3d;font-size:clamp(1.1rem,2vw,1.3rem);display:flex;align-items:center;gap:8px;">
                         <i class="fas fa-book" style="color:#c9a05c;"></i> Mengenal Lebih Dalam Serat Wedharaga
@@ -1779,7 +1713,7 @@
                     </div>
                 </div>
 
-                <!-- ===== CTA GAME ===== -->
+                <!-- CTA GAME -->
                 <div class="game-cta" id="game-cta">
                     <h3><i class="fas fa-gamepad"></i> Siap Uji Pemahamanmu?</h3>
                     <p>Kami telah menyiapkan 3 skenario interaktif berbasis ajaran Serat Wedharaga. <br />Klik tombol di bawah untuk memulai permainan di halaman terpisah.</p>
@@ -1803,24 +1737,19 @@
         </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- JAVASCRIPT -->
-    <!-- ============================================================ -->
+    <!-- ===== JAVASCRIPT ===== -->
     <script>
         (function() {
             'use strict';
 
-            // ============================================================
-            // MODE SELECTOR
-            // ============================================================
+            // ===== MODE SELECTOR =====
             const modeSelector = document.getElementById('modeSelector');
             const modeBtns = document.querySelectorAll('.mode-btn');
-            let selectedMode = 'desktop';
 
             modeBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    selectedMode = this.dataset.mode;
-                    localStorage.setItem('selectedMode', selectedMode);
+                    const mode = this.dataset.mode;
+                    localStorage.setItem('selectedMode', mode);
                     modeSelector.classList.add('hide');
                     startLoading();
                 });
@@ -1828,18 +1757,15 @@
 
             const savedMode = localStorage.getItem('selectedMode');
             if (savedMode) {
-                selectedMode = savedMode;
                 modeSelector.classList.add('hide');
                 startLoading();
             }
 
             function startLoading() {
-                // Loading sudah berjalan otomatis
+                // sudah jalan otomatis
             }
 
-            // ============================================================
-            // LOADING
-            // ============================================================
+            // ===== LOADING =====
             const loadingScreen = document.getElementById('loadingScreen');
             const mainContent = document.getElementById('mainContent');
 
@@ -1851,9 +1777,7 @@
                 }, 1300);
             }, 3800);
 
-            // ============================================================
-            // TOGGLE MENU
-            // ============================================================
+            // ===== TOGGLE MENU =====
             const menuToggle = document.getElementById('menuToggle');
             const navLinks = document.getElementById('navLinks');
 
@@ -1868,9 +1792,7 @@
                 }
             });
 
-            // ============================================================
-            // NAVIGASI
-            // ============================================================
+            // ===== NAVIGASI =====
             const navItems = document.querySelectorAll('.nav-links a');
             const sections = {
                 home: document.getElementById('sec-home'),
@@ -1910,18 +1832,14 @@
 
             window.navigateTo = navigateTo;
 
-            // ============================================================
-            // Q&A ACCORDION
-            // ============================================================
+            // ===== Q&A =====
             document.querySelectorAll('.qa-item').forEach(item => {
                 item.addEventListener('click', function() {
                     this.classList.toggle('open');
                 });
             });
 
-            // ============================================================
-            // SERAT SLIDER — NAVIGASI TITIK 3
-            // ============================================================
+            // ===== SERAT SLIDER =====
             const slides = document.getElementById('seratSlides');
             const dots = document.querySelectorAll('.dot-nav button');
             let currentIndex = 0;
@@ -1957,20 +1875,15 @@
                 }, 6000);
             });
 
-            // ============================================================
-            // DEFAULT
-            // ============================================================
+            // ===== DEFAULT =====
             navigateTo('home');
 
-            // ============================================================
-            // TOMBOL GAME
-            // ============================================================
+            // ===== TOMBOL GAME =====
             const gameBtn = document.querySelector('.game-cta .btn-primary');
             if (gameBtn) {
                 gameBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     alert('🚀 Ganti link ini dengan URL halaman game yang akan kamu buat sendiri!');
-                    // Ganti dengan: window.open('https://link-game-kamu.com', '_blank');
                 });
             }
 
